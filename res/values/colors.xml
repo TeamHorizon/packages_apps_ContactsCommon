@@ -106,6 +106,7 @@
         <item>@color/letter_tile_grey_color_dark</item>
     </array>
 
+
     <!-- The default color used for tinting photos when no color can be extracted via Palette,
             this is Blue Grey 500 -->
     <color name="quickcontact_default_photo_tint_color">#607D8B</color>
