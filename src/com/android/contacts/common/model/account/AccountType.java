@@ -292,6 +292,9 @@ public abstract class AccountType {
     public CharSequence getDisplayLabel(Context context) {
         CharSequence label = null;
         updateAuthDescriptions(context);
+        if (PhoneAccountType.ACCOUNT_TYPE.equals(accountType)) {
+            return context.getResources().getString(R.string.local_storage_account);
+        }
         if (mTypeToAuthDescription.containsKey(accountType)) {
             try {
                 AuthenticatorDescription desc = mTypeToAuthDescription.get(accountType);
